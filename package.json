@@ -1,0 +1,28 @@
+{
+  "name": "DDNSupdater",
+  "version": "0.0.0",
+  "description": "check IP status and update DNS service provider IP",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever start DDNSupdater.js",
+    "stop": "forever stop DDNSupdater.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/home/allen/RouterScript/../git/DDNSupdater/"
+  },
+  "keywords": [
+    "IP",
+    "check",
+    "DNS",
+    "update"
+  ],
+  "author": "Allen",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "https": "~1.0.0",
+    "querystring": "~0.2.0",
+    "tough-cookie": "~2.0.0",
+    "forever": "~0.15.1"
+  }
+}

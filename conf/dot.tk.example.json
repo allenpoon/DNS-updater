@@ -1,0 +1,18 @@
+[
+	{
+		"username":"yourEmail@example.com",
+		"password":"yourPassword",
+		"domain": [
+			{
+				"domainName":"example.tk",
+				"domainID": "12345678",
+				"hostName":[
+					{
+						"name": "www",
+						"type": "A"
+					}
+				]
+			}
+		]
+	}
+]
