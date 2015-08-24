@@ -2,7 +2,7 @@
 Dynamically Update DNS service
 
 ## Requirement
-It require `Node.js` and `npm`
+It require `Node.js` and `npm` and npm pageage `forever` (`sudo npm install forever -g`)
 
 ## Start
 `sudo npm run start`
