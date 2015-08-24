@@ -1,4 +1,6 @@
 {
 	"updatePeriod": 5,
-	"forceUpdatePeriod": 86400
+	"forceUpdatePeriod": 86400,
+	"if": ["p4p1"],
+	"log": "json"
 }

@@ -9,7 +9,8 @@
 				"hostName":[
 					{
 						"name": "www",
-						"type": "A"
+						"type": "A",
+						"if": "p4p1"
 					}
 				]
 			}

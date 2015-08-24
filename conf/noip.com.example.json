@@ -1,0 +1,12 @@
+[
+	{
+		"hostname":[
+			{
+				"name":"example.no-ip.info",
+				"if":"p4p1"
+			}
+		],
+		"username":"yourEmail@example.com",
+		"password":"yourPassword"
+	}
+]
