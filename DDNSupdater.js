@@ -24,9 +24,9 @@ conf.if.forEach(function(interface){
 	ip[interface]=0;
 });
 
-var isIPChanged = (function(){
+var isIPChanged = function(){
 	var result = false;
-	return function(){
+	if(isWanUp()){
 		var ifList = os.networkInterfaces();
 		for(var x in ip){
 			for(var i = 0; !!ifList[x] && i < ifList[x].length; i++){
@@ -38,9 +38,19 @@ var isIPChanged = (function(){
 				}
 			}
 		}
-		return result;
 	}
-})();
+	return result;
+};
+
+var isWanUp = function(){
+	var wan = os.networkInterfaces();
+	var result = false;
+	wan = wan[conf.wan];
+	for(var i=0;!!wan && !result && i<wan.length;i++){
+		result = 'IPv4' === wan[i].family && !!wan[i].address;
+	}
+	return result;
+}
 
 var log = (function(){
 	switch(conf.log){
