@@ -1,0 +1,13 @@
+[
+	{
+		"email": "your@email.com",
+		"apikey": "cloudflare API Key",
+		"zone": {
+			"your_domain.com":[
+				{"if": "interface_name", "name": "subdomain, empty means update your_domain.com"},
+				{"if": "p1p1", "name": ""},
+				{"if": "p1p1", "name": "www"},
+			]
+		}
+	}
+]

@@ -5,7 +5,8 @@
   "main": "DDNSupdater.js",
   "scripts": {
     "start": "forever start DDNSupdater.js",
-    "stop": "forever stop DDNSupdater.js"
+    "stop": "forever stop DDNSupdater.js",
+    "test": "node DDNSupdater.js"
   },
   "repository": {
     "type": "git",
