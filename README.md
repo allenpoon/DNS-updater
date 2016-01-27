@@ -44,3 +44,14 @@ Dot.tk config.
       * (object)
         * `name` (string): domain name
         * `if` (string): network interface name
+
+### cloudflare.com.json
+* (array): list of account
+  * (object)
+    * `email` (email): login username
+    * `apikey` (string): CloudFlare API Auth Key
+    * `zone` (object): list of domain
+      * `your_domain.name` (array):
+        * (object)
+          * `if` (string): network interface name
+          * `name` (string): subdomain name, if empty string, change your_domain.com
