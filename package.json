@@ -21,9 +21,7 @@
   "author": "Allen",
   "license": "GPLv2",
   "dependencies": {
-    "https": "~1.0.0",
-    "querystring": "~0.2.0",
-    "tough-cookie": "~2.0.0",
-    "forever": "~0.15.1"
+    "querystring": "^0.2.0",
+    "tough-cookie": "^4.0.0"
   }
 }
