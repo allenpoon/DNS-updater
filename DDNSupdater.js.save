@@ -24,37 +24,30 @@ conf.if.forEach(function(interface){
 	ip[interface]={};
 });
 
-// TODO: add multiple record to DNS
-// IPv6: private network: fe80::/10 (fe8* - feb*)
-// IPv4: private network: 10.0.0.0/8, 172.16.0.0/12 (172.16..0.0 - 172.31.255.255), 192.168.0.0/16
-
 var isIPChanged = function(){
 	var result = false;
 	if(isWanUp()){
 		var ifList = os.networkInterfaces();
 		for(var x in ip){
-			var tmpv4, tmpv6;
-			for(var i = 0; !!ifList[x] && i < ifList[x].length - 1; i++){
+			for(var i = 0; !!ifList[x] && i < ifList[x].length; i++){
 				switch(ifList[x][i].family){
 
 					case 'IPv4':
-						tmpv4 = ifList[x][i].address;
+						if(ip[x].ipv4 != ifList[x][i].address){
+							ip[x].ipv4 = ifList[x][i].address;
+							result = true;
+						}
 						break;
 
 					case 'IPv6':
-						tmpv6 = ifList[x][i].address;
+					if(ip[x].ipv6 != ifList[x][i].address){
+							ip[x].ipv6 = ifList[x][i].address;
+							result = true;
+						}
 						break;
 
 					default:
 				}
-			}
-			if(ip[x].ipv4 != tmpv4){
-				ip[x].ipv4 = tmpv4;
-				result = true;
-			}
-			if(ip[x].ipv6 != tmpv6){
-				ip[x].ipv6 = tmpv6;
-				result = true;
 			}
 		}
 	}
