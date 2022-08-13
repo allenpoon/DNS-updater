@@ -1,12 +1,10 @@
 {
   "name": "DNSupdater",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "check IP status and update DNS service provider IP",
   "main": "DDNSupdater.js",
   "scripts": {
-    "start": "forever start DDNSupdater.js",
-    "stop": "forever stop DDNSupdater.js",
-    "test": "node DDNSupdater.js"
+    "start": "node DDNSupdater.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +19,7 @@
   "author": "Allen",
   "license": "GPLv2",
   "dependencies": {
-    "https": "~1.0.0",
     "querystring": "~0.2.0",
-    "tough-cookie": "~2.0.0",
-    "forever": "~0.15.1"
+    "tough-cookie": "~2.0.0"
   }
 }
