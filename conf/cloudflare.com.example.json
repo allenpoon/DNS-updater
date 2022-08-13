@@ -1,7 +1,8 @@
 [
 	{
-		"email": "your@email.com",
-		"apikey": "cloudflare API Key",
+		"authorization": "cloudflare API token",
+		"email": "your@email.com (require if no authorization)",
+		"apikey": "cloudflare API Key (require if no authorization)",
 		"zone": {
 			"your_domain.com":[
 				{"if": "interface_name", "name": "subdomain, empty means update your_domain.com"},
