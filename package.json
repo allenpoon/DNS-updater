@@ -19,7 +19,7 @@
   "author": "Allen",
   "license": "GPLv2",
   "dependencies": {
-    "querystring": "~0.2.0",
-    "tough-cookie": "~2.0.0"
+    "querystring": "^0.2.0",
+    "tough-cookie": "^4.0.0"
   }
 }
