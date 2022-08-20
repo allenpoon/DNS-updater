@@ -42,12 +42,13 @@ var isIPChanged = function(){
             }
             break;
 
-          case 'IPv6':
-          if(ip[x].ipv6 != ifList[x][i].address){
-              ip[x].ipv6 = ifList[x][i].address;
-              result = true;
-            }
-            break;
+          // TODO: ipv6 may have multiple addresses and need to find out what address can be used
+          // case 'IPv6':
+          // if(ip[x].ipv6 != ifList[x][i].address){
+          //     ip[x].ipv6 = ifList[x][i].address;
+          //     result = true;
+          //   }
+          //   break;
         }
       }
     }
