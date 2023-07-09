@@ -20,6 +20,6 @@
   "license": "GPLv2",
   "dependencies": {
     "querystring": "^0.2.0",
-    "tough-cookie": "^4.0.0"
+    "tough-cookie": "^4.1.3"
   }
 }
